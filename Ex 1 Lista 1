@@ -1,0 +1,33 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+  
+
+     real a, b,c, media, soma, div
+     a = 0
+     b = 0 
+     c = 0 
+ 
+    escreva ("Vamos calcular a sua média!\n") 
+    escreva ("Digite a primeira nota:\n")
+    leia(a)
+    escreva("Digite a segunda nota:\n")
+    leia (b)
+    escreva("Digite a terceira nota:\n")
+    leia (c)
+
+    soma = a + b + c 
+    div = soma / 3
+
+    escreva("MÉDIA = ", mat.arredondar(div, 2), "\n")
+    se (div >= 6){
+      escreva("APROVADO")
+    }
+    se (div < 6){
+      escreva("REPROVADO")
+    }
+
+
+    
+  }
+}
