@@ -1,0 +1,64 @@
+programa {
+  funcao inicio() {
+    real pop, geral, arq, cad, total, mult1, mult2, mult3, mult4, div, pop2, geral2, arq2, cad2, total2, mult12, mult22, mult32, mult42, div2, pop3, geral3, arq3, cad3, total3, mult13, mult23, mult33, mult43, div3
+    inteiro ing, ing2, ing3
+
+    escreva("Digite o total de ingressos comprados no jogo 1: ")
+    leia(ing)
+    escreva("\nDigite a porcentagem de ingressos populares no jogo 1: ")
+    leia (pop)
+    escreva("\nDigite a porcentagem de ingressos geral no jogo 1: ")
+    leia(geral)
+    escreva("\nDigite a porcentagem de ingressos da arquibancada no jogo 1: ")
+    leia(arq)
+    escreva("\nDigite a porcentagem de ingressos de cadeiras no jogo 1: ")
+    leia(cad)
+
+    div = ing / 100 
+    mult1 = div * pop 
+    mult2 = div * geral * 5
+    mult3 = div * arq * 10
+    mult4 = div * cad * 20 
+    total = mult1 + mult2 + mult3 + mult4 
+
+    escreva("Digite o total de ingressos comprados no jogo 2: ")
+    leia(ing2)
+    escreva("\nDigite a porcentagem de ingressos populares no jogo 2: ")
+    leia (pop2)
+    escreva("\nDigite a porcentagem de ingressos geral no jogo 2: ")
+    leia(geral2)
+    escreva("\nDigite a porcentagem de ingressos da arquibancada no jogo 2: ")
+    leia(arq2)
+    escreva("\nDigite a porcentagem de ingressos de cadeiras no jogo 2: ")
+    leia(cad2)
+
+    div2 = ing / 100 
+    mult12 = div2 * pop2 
+    mult22 = div2 * geral2 * 5
+    mult32 = div2 * arq2 * 10
+    mult42 = div2 * cad2 * 20 
+    total2 = mult12 + mult22 + mult32 + mult42 
+
+    escreva("Digite o total de ingressos comprados no jogo 3: ")
+    leia(ing3)
+    escreva("\nDigite a porcentagem de ingressos populares no jogo 3: ")
+    leia (pop3)
+    escreva("\nDigite a porcentagem de ingressos geral no jogo 3: ")
+    leia(geral3)
+    escreva("\nDigite a porcentagem de ingressos da arquibancada no jogo 3: ")
+    leia(arq3)
+    escreva("\nDigite a porcentagem de ingressos de cadeiras no jogo 3: ")
+    leia(cad3)
+
+    div3 = ing3 / 100 
+    mult13 = div3 * pop3 
+    mult23 = div3 * geral3 * 5
+    mult33 = div3 * arq3 * 10
+    mult43 = div3 * cad3 * 20 
+    total3 = mult13 + mult23 + mult33 + mult43
+
+    escreva(" A RENDA DO JOGO N 1: ", total, "\n A RENDA DO JOGO N 2 :", total2, "\n A RENDA DO JOGO N 3:", total3)
+
+
+  }
+}
