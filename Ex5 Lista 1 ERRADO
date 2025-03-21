@@ -11,7 +11,7 @@ programa {
     leia(consumo)
     escreva( "Qual tipo de consumidor você é?\nDigite 1 se for residencial, 2 se for comercial ou 3 se for industrial: ")
     leia (tipo)
-    se( tipo = 1)
+    se( tipo == 1)
 
        
 
