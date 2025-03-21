@@ -1,0 +1,41 @@
+programa {
+    inclua biblioteca Matematica --> mat
+  funcao inicio() {
+        real pop, geral, arq, cad, total, mult1, mult2, mult3, mult4, div
+        inteiro ing, teste, contador
+      
+      contador = 0
+
+     escreva("Quantos jogos teste são? ")
+     leia(teste)
+
+      enquanto(contador != teste){
+
+        contador = contador + 1 
+     
+     escreva("\nDigite o total de ingressos comprados no jogo N", contador, ": ")
+     leia(ing)
+     escreva("\nDigite a porcentagem de ingressos populares: ")
+     leia (pop)
+     escreva("\nDigite a porcentagem de ingressos geral: ")
+     leia(geral)
+     escreva("\nDigite a porcentagem de ingressos da arquibancada: ")
+     leia(arq)
+     escreva("\nDigite a porcentagem de ingressos de cadeiras: ")
+     leia(cad)
+    
+     div = ing / 100 
+     mult1 = div * pop 
+     mult2 = div * geral * 5
+     mult3 = div * arq * 10
+     mult4 = div * cad * 20 
+     total = mult1 + mult2 + mult3 + mult4 
+      
+      escreva("\nA RENDA DO JOGO N", contador," É: ", mat.arredondar(total, 2), "!\n")
+
+      
+    
+      }
+    
+  }
+}
