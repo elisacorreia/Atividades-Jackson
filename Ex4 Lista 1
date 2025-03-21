@@ -1,0 +1,18 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real sal, energia, consumo, kw, desc
+
+    escreva("Qual o valor do salário mínimo? \n")
+    leia (sal)
+    escreva ("Quantos kW sua residência gasta? \n")
+    leia (energia)
+
+    kw = sal * 7 / 1000
+    consumo = energia * kw
+    desc = consumo - consumo / 10
+
+    escreva ("Custo por kW: R$", mat.arredondar(kw, 2), "\nCusto do consumo: R$", mat.arredondar(consumo, 2), "\nCusto com desconto: R$", mat.arredondar(desc, 2))
+    
+  }
+}
