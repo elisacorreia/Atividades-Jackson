@@ -1,0 +1,54 @@
+programa {
+  funcao inicio() {
+    inteiro quad, num, n1, n2, n3
+    
+
+    escreva("Primeiro número: ")
+    leia (n1)
+
+    se (1 > n1 ou n1 > 9) {
+      escreva("DÍGITO INVÁLIDO")}
+
+    se (1 <= n1 e n1 <= 9){
+      escreva("Segundo número: ")
+      leia (n2)
+
+      se (1 > n2 ou n2 > 9) {
+      escreva("DÍGITO INVÁLIDO")}
+
+      se (1 <= n2 e n2 <= 9) {
+        escreva("Terceiro número: ")
+        leia (n3)
+
+        se (1 > n3 ou n3 > 9) {
+        escreva("DÍGITO INVÁLIDO")}
+
+        se (1 <= n3 e n3 <= 9){
+          n1 = n1 * 100
+          n2 = n2 * 10
+          n3 = n3 * 1
+
+          num = n1 + n2 + n3
+          quad = num * num 
+
+          escreva(num, ", ", quad)
+        }
+      
+      
+      
+   
+      
+       
+      }
+      
+
+      
+
+
+
+    }
+    
+      
+
+  }
+}
