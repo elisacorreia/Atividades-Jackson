@@ -1,0 +1,43 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real cliente, consumo, tipo, valor
+    
+    tipo = 0
+   
+    escreva("Conta: ")
+    leia (cliente)
+    escreva("Metros cúbicos consumidos: ")
+    leia(consumo)
+    escreva( "Qual tipo de consumidor você é?\n1 = RESIDENCIAL\n2 = COMERCIAL\n3 = INDUSTRIAL ")
+    leia (tipo)
+
+    se( tipo == 1){
+      valor = 5 + consumo * 0.05}
+    
+    se (tipo == 2 ){
+      se(consumo <= 80){
+          valor = 500
+      }
+      senao{valor = 500 + 0.25 * (consumo - 80)}}
+       
+    
+    se(tipo == 3){
+      se(consumo <= 100){
+        valor = 800
+      }
+      senao{valor = 800 + 0.04 * (consumo - 100)}
+    }
+
+    escreva("CONTA =  ", cliente, "\n")
+    escreva("VALOR DA CONTA = ", mat.arredondar(valor,2))
+
+
+    
+  }
+}
+    
+    
+  
+   
+  }
