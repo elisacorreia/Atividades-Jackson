@@ -1,0 +1,27 @@
+programa {
+   inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real f, c, pol, mm
+    
+    escreva ("Quantos Fahrenheit você quer em Celsius? ")
+      leia(f)
+    
+    escreva("Quantas polegadas de chuva você quer em milímetros? ")
+      leia (pol)
+      
+    mm = pol * 25.4
+    c = 5 * (f - 32) / 9
+    
+    escreva("O VALOR EM CESIUS = ", mat.arredondar(c, 2))
+    escreva("\nA QUANTIDADE DE CHUVA E = ", mat.arredondar(mm, 2) )
+  }
+    
+
+
+    
+    
+  }
+  
+    
+  
+}
