@@ -1,0 +1,18 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    real raio, altura, custo, area
+
+    escreva("O raio da lata é: ")
+    leia(raio)
+    escreva("A altura da lata é: ")
+    leia(altura)
+
+    area = 2 * (3.14159 * raio * raio) + 2 * (3.14159 * raio * altura)
+    custo = 100 * area
+
+    escreva("O VALOR DO CUSTO É: ", mat.arredondar(custo, 2), "\n")
+    
+  }
+}
