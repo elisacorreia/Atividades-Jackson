@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	idade, peso, altura := 0, 0.0, 0.0
+	fmt.Print("Informe a idade: ")
+	fmt.Scanf("%v", &idade)
+	fmt.Print("Informe o peso: ")
+	fmt.Scanf("%v", &peso)
+	fmt.Print("Informe a altura: ")
+	fmt.Scanf("%v", &altura)
+	fmt.Printf("Olá!\nSua idade é igual a %v\n: ", idade)
+	fmt.Printf("Vc apresentou um pesode %g quilos e uma altura de %g metros", peso, altura)
+}
