@@ -1,0 +1,20 @@
+// You can edit this code!
+// Click here and start typing.
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		peso   float64 = 75.0
+		idade  int     = 18
+		altura float64 = 1.76
+	)
+	fmt.Println("Olá!")
+	fmt.Println("Sua idade é igual a: ", idade)
+
+	imc := (peso / (altura * altura))
+
+	fmt.Printf("Vc apresentou um peso de %f quilos, uma altura de %f metros e imc igual a %f", peso, altura, imc)
+
+}
