@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+    var base, exp, i, r int
+    fmt.Scan(&base)
+    fmt.Scan(&exp)
+    i = 0
+    r = 1
+    if exp == 0 {
+        r = 1
+    } else 
+    {for i < exp {
+        i++
+        r *= base
+    }}
+    fmt.Println(r)
+   }
