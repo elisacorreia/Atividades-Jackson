@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func main() {
+    var n1, n2 int
+    fmt.Scan(&n1)
+    fmt.Scan(&n2)
+
+    soma := 0
+    media := 0
+    lista := []int{}
+    if n1%2 != 0 && n2%2 == 0{ n1 = n1 +1
+    } else if n1%2 == 0 && n2%2 != 0 {n2 = n2 - 1}
+
+    if n1%2 == 0 && n2%2 == 0 {
+        for i := n1; i <= n2; i += 2 {
+            lista = append(lista, i)
+        }
+        
+        for _, valor := range lista {
+            soma += valor
+        }
+        media = soma / (len(lista))
+        fmt.Println(soma)
+        fmt.Println(media)
+   
+} else if n1 == n2 {
+    fmt.Println("0")
+    fmt.Println("0")
+}}
